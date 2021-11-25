@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangment-Work</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div id="backdrop"></div>
+  <section class="todo">
+    <div class="header-todo">
+        <div class="search">
+          <span class="icon-search"><i class="fas fa-search"></i></span>
+          <input type="text" id="search-input" placeholder="جستجو ...">
+        </div>
+        <div class="left">
+            <div class="add-todo">
+                <span class="add-icon"><i class="fas fa-plus"></i></span>
+             </div>
+            
+        </div>
+    </div>
+        <div class="sort-container" style="display: flex;justify-content: space-between;align-items: center;">
+            <div class="sort">
+                <label for="#sort">مرتب سازی بر اساس :</label>
+                <select name="sort" id="sort">
+              
+                    <option value="ByEdited">ویرایش </option>
+                    <option value="ByCreate"> ساخته شده </option>
+                </select>
+            </div>
+            <div class="sort">
+                <label for="#sort"> نمایش براساس تکمیل نشده :</label>
+                 <input type="checkbox" name="" id="show-by">
+            </div>
+        </div>
+        <div class="list-todo">
+            <div class="empty-list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  </svg>
+            </div>
+            <ul id="list">
+               
+            
+            </ul>
+           
+        </div>
+  </section>
+
+
+  <section class="modal">
+      <div class="header-modal">
+          <p class="title-modal">فعالیت</p>
+
+      </div>
+  <div class="main-modal">
+      <div class="form-control">
+          <p class="title-task-txt">عنوان فعالیت : </p>
+          <input type="text" class="form-control-input"  id="title-task"  placeholder="عنوان فعالیت را وارد نماید">
+      </div>
+      <div class="form-control">
+          <p class="title-task-txt">توضیحات  : </p>
+          <textarea  class="form-control-input"  id="task-dis"  placeholder="توضیحاتی درباره فعالیت خود وارد کنید"></textarea>
+      </div>
+  </div>
+  <div class="btn-container">
+    <button class="btn-cancel"> انصراف</button>
+      <button class="btn-ok">اضافه کردن</button>
+      
+  </div>
+  </section>
+
+  <div class="modal-error">
+    <h4>  اخطار </h4>
+    <p>
+        فیلد ها خالی میباشد
+     در تکمیل کردن انها دقت فرمایید
+    </p>
+    <div class="btn">
+        <button class="close-modal">خب</button>
+    </div>
+  </div>
+  
+  <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+
+  <script src="js/moment.min.js"></script>
+
+  <script src="./js/jalali-moment.js"></script>
+  
+  <script src="./js/function.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

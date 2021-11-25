@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/edit.css">
+</head>
+<body>
+    <div class="header">
+        <p class="title-page">صفحه تغییرات</p>
+        <p class="back">برگشت ></p>
+    </div>
+    <div class="edit-form">
+        <div class="row">
+            <p>موضوع فعالیت</p>
+            <input type="text" class="frm" id="title">
+        </div>
+        <div class="row">
+            <p>توضیح فعالیت</p>
+            <textarea  class="frm" id="dis"> </textarea>
+        </div>
+
+      <div class="btn-container">
+        <button id="change">ثبت تغیرات</button>
+      </div>
+      <div class="last-edit">
+          <span>زمان آخرین تغییرات :</span>
+          <span class="edited"></span>
+      </div>
+    </div>
+
+   
+
+
+
+
+
+
+
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/jalali-moment.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/edit.js"></script>
+</body>
+</html>
